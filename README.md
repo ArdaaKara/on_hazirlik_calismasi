@@ -1,0 +1,2 @@
+# on_hazirlik_calismasi
+on_hazirlik_calismasi
