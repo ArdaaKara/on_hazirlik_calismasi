@@ -1,0 +1,171 @@
+$primary-color: #007bff;
+$hover-color: #0056b3;
+$secondary-color: #3498db;
+$hover-secondary-color: #2980b9;
+$error-color: #e74c3c;
+$background-color: #f4f4f4;
+$white: #ffffff;
+$border-color: #ddd;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: $white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    margin: 20px 0;
+}
+
+.book-cover img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.description {
+    flex: 1;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.reviews {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.review {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.comment-section {
+    margin-top: 20px;
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #5cb85c;
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4cae4c;
+        }
+    }
+}
+
+.library-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column; /* Dikey hizalama */
+    align-items: center; /* Ortada hizalama */
+
+    h2 {
+        margin-bottom: 20px; /* Başlık ile kartlar arasında boşluk */
+    }
+
+    .book-container {
+        display: flex;
+        justify-content: center; /* Kitapları ortada hizalar */
+        max-width: 1200px; /* Maksimum genişlik ayarı */
+        width: 100%; /* Tam genişlik */
+
+        .book-item {
+            border: 1px solid $border-color;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0 10px; /* Yanlarda boşluk bırakır */
+            text-align: center;
+            flex: 1; /* Her bir kitap eşit genişlikte olur */
+            max-width: 200px; /* Her bir kitabın maksimum genişliği */
+
+            img {
+                max-width: 150px; /* Görselin maksimum genişliği */
+                height: auto; /* Yüksekliği otomatik ayarlar */
+            }
+
+            .price {
+                font-weight: bold;
+                color: $error-color;
+            }
+
+            .buy-button {
+                background-color: $secondary-color;
+                color: $white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $hover-secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.form-container {
+    background: $white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto; /* Üstten 50px boşluk ver */
+
+    h1 {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: $primary-color;
+        color: $white
+}}
